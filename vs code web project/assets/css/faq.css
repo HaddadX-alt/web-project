@@ -1,0 +1,5 @@
+.faq-section { max-width: 800px; margin: 0 auto; }
+.faq-item { border-bottom: 1px solid #ddd; padding: 20px 0; }
+.faq-question { font-size: 18px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+.faq-answer { display: none; padding-top: 15px; color: #666; font-size: 16px; }
+.faq-item.active .faq-answer { display: block; }
