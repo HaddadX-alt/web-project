@@ -1,0 +1,7 @@
+.cart-table { width: 100%; border-collapse: collapse; margin: 40px 0; }
+.cart-table th { text-align: left; border-bottom: 2px solid #eee; padding: 15px; font-weight: 600; }
+.cart-table td { padding: 20px 15px; border-bottom: 1px solid #eee; }
+.cart-product { display: flex; align-items: center; gap: 20px; }
+.cart-img { width: 100px; height: 120px; object-fit: cover; border-radius: 8px; }
+.qty-input { width: 70px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; text-align: center; }
+.cart-total { background: #f9f9f9; padding: 30px; border-radius: 10px; text-align: right; }
