@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | LAVISH</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+    <script src="https://kit.fontawesome.com/dec481ddd6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div>New Year Sale is Live Now</div>
+                    <div class="d-flex gap-3">
+                    <a href="https://www.instagram.com/lavish.jor1/"><i class="fa-brands fa-instagram"></i> FOLLOW LAVISH JO</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="header-logo">
+                    <a href="index.html"><img src="assets/images/LAVISH.png" alt="Lavish Logo"></a>
+                </div>
+                <nav class="navbar">
+                    <ul class="d-flex gap-4">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="header-account">
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="page-title">
+            <h1>Our Collection</h1>
+            <div class="breadcrumb"><a href="index.html">Home</a> <span>></span> <span>Products</span></div>
+        </div>
+
+        <div class="product-grid">
+            <div class="card">
+                <a href="product-details.html?id=p1">
+                <img src="assets/images/product_1.jpg" alt="LouShoes">
+                </a>
+                <div class="card-body"><h3>Loubotin black shoes</h3><p>35.00 JOD</p>
+                <button class="button-animation" onclick="addToCart(35.00, 'Loubotin black shoes', 'assets/images/product_1.jpg')">Add To Cart</button></div>
+            </div>
+            <div class="card">
+                <a href="product-details.html?id=p2">
+                <img src="assets/images/product_2.jpg" alt="Shirt">
+                </a>
+                <div class="card-body"><h3>Ralph Lauren black Bear sweater</h3><p>25.99 JOD</p>
+                <button class="button-animation" onclick="addToCart(25.99, 'Ralph Lauren black Bear sweater', 'assets/images/product_2.jpg')">Add To Cart</button></div>
+            </div>
+            <div class="card">
+                <a href="product-details.html?id=p3">
+                <img src="assets/images/product_3.jpg" alt="Jacket">
+                </a>
+                <div class="card-body"><h3>Ralph Lauren black jacket</h3><p>35.99 JOD</p>
+                <button class="button-animation" onclick="addToCart(35.99, 'Ralph Lauren black jacket', 'assets/images/product_3.jpg')">Add To Cart</button></div>
+            </div>
+            <div class="card">
+                <a href="product-details.html?id=p4">
+                <img src="assets/images/product_4.jpg" alt="zipper">
+                </a>
+                <div class="card-body"><h3>Ralph Lauren black zipper</h3><p>30.99 JOD</p>
+                <button class="button-animation" onclick="addToCart(30.99, 'Ralph Lauren black zipper', 'assets/images/product_4.jpg')">Add To Cart</button></div>
+            </div>
+            <div class="card">
+                <a href="product-details.html?id=p5">
+                <img src="assets/images/product_5.jpg" alt="sweater">
+                </a>
+                <div class="card-body"><h3>Ralph Lauren blue Bear sweater</h3><p>25.99 JOD</p>
+                <button class="button-animation" onclick="addToCart(25.99, 'Ralph Lauren blue Bear sweater', 'assets/images/product_5.jpg')">Add To Cart</button></div>
+            </div>
+            <div class="card">
+                <a href="product-details.html?id=p7">
+                <img src="assets/images/product_7.jpg" alt="sweater">
+                </a>
+                <div class="card-body"><h3>Ralph Lauren green Bear sweater</h3><p>25.99 JOD</p>
+                <button class="button-animation" onclick="addToCart(25.99, 'Ralph Lauren green Bear sweater', 'assets/images/product_7.jpg')">Add To Cart</button></div>
+            </div>
+            <div class="card">
+                <a href="product-details.html?id=p8">
+                <img src="assets/images/product_8.jpg" alt="sweater">
+                </a>
+                <div class="card-body"><h3>Ralph Lauren navy america sweater</h3><p>25.00 JOD</p>
+                <button class="button-animation" onclick="addToCart(25.00, 'Ralph Lauren navy america sweater', 'assets/images/product_8.jpg')">Add To Cart</button></div>
+            </div>
+            <div class="card">
+                <a href="product-details.html?id=p10">
+                <img src="assets/images/product_10.jpg" alt="jacket">
+                </a>
+                <div class="card-body"><h3>Ralph Lauren navy jacket</h3><p>30.99 JOD</p>
+                <button class="button-animation" onclick="addToCart(30.99, 'Ralph Lauren navy jacket', 'assets/images/product_10.jpg')">Add To Cart</button></div>
+            </div>
+            <div class="card">
+                <a href="product-details.html?id=p11">
+                <img src="assets/images/product_11.jpg" alt="sweater">
+                </a>
+                <div class="card-body"><h3>Ralph Lauren navy sweater</h3><p>25.00 JOD</p>
+                <button class="button-animation" onclick="addToCart(25.00, 'Ralph Lauren navy sweater', 'assets/images/product_11.jpg')">Add To Cart</button></div>
+            </div>
+            <div class="card">
+                <a href="product-details.html?id=p12">
+                <img src="assets/images/product_12.jpg" alt="zipper">
+                </a>
+                <div class="card-body"><h3>Ralph Lauren navy zipper </h3><p>28.00 JOD</p>
+                <button class="button-animation" onclick="addToCart(28.00, 'Ralph Lauren navy zipper', 'assets/images/product_12.jpg')">Add To Cart</button></div>
+            </div>
+            <div class="card">
+                <a href="product-details.html?id=p13">
+                <img src="assets/images/product_13.jpg" alt="sweater">
+                </a>
+                <div class="card-body"><h3>Ralph Lauren red Bear sweater</h3><p>25.00 JOD</p>
+                <button class="button-animation" onclick="addToCart(25.00, 'Ralph Lauren red Bear sweater', 'assets/images/product_13.jpg')">Add To Cart</button></div>
+            </div>
+            <div class="card">
+                <a href="product-details.html?id=p14">
+                <img src="assets/images/product_14.jpg" alt="sweater">
+                </a>
+                <div class="card-body"><h3>Ralph Lauren white america sweater</h3><p>25.99 JOD</p>
+                <button class="button-animation" onclick="addToCart(25.99, 'Ralph Lauren white america sweater', 'assets/images/product_14.jpg')">Add To Cart</button></div>
+            </div>
+            <div class="card">
+                <a href="product-details.html?id=p16">
+                <img src="assets/images/product_16.jpg" alt="sweater">
+                </a>
+                <div class="card-body"><h3>Ralph Lauren white Bear sweater</h3><p>25.00 JOD</p>
+                <button class="button-animation" onclick="addToCart(25.00, 'Ralph Lauren white Bear sweater', 'assets/images/product_16.jpg')">Add To Cart</button></div>
+            </div>
+            <div class="card">
+                <a href="product-details.html?id=p18">
+                <img src="assets/images/product_18.jpg" alt="jacket">
+                </a>
+                <div class="card-body"><h3>Ralph Lauren white jacket</h3><p>30.99 JOD</p>
+                <button class="button-animation" onclick="addToCart(30.99, 'Ralph Lauren white jacket', 'assets/images/product_18.jpg')">Add To Cart</button></div>
+            </div>
+            <div class="card">
+                <a href="product-details.html?id=p19">
+                <img src="assets/images/product_19.jpg" alt="sweater">
+                </a>
+                <div class="card-body"><h3>Ralph Lauren black Bear sweater</h3><p>25.00 JOD</p>
+                <button class="button-animation" onclick="addToCart(25.00, 'Ralph Lauren black Bear sweater', 'assets/images/product_19.jpg')">Add To Cart</button></div>
+            </div>
+            <div class="card">
+                <a href="product-details.html?id=p20">
+                <img src="assets/images/product_20.jpg" alt="sweater">
+                </a>
+                <div class="card-body"><h3>Ralph Lauren white sweater</h3><p>25.99 JOD</p>
+                <button class="button-animation" onclick="addToCart(25.99, 'Ralph Lauren white sweater', 'assets/images/product_20.jpg')">Add To Cart</button></div>
+            </div>
+            <div class="card">
+                <a href="product-details.html?id=p21">
+                <img src="assets/images/product_21.jpg" alt="paris">
+                </a>
+                <div class="card-body"><h3>Ami Paris white sweater</h3><p>20.00 JOD</p>
+                <button class="button-animation" onclick="addToCart(20.00, 'Ami Paris white sweater', 'assets/images/product_21.jpg')">Add To Cart</button></div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/cart.js"></script>
+</body>
+</html>

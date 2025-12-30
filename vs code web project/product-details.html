@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Details | LAVISH</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <script src="https://kit.fontawesome.com/dec481ddd6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="container" style="padding: 50px 0;">
+        <div class="row">
+            <div style="flex: 0 0 50%; padding: 0 15px;">
+                <img id="detail-image" src="" alt="" style="width: 100%; border-radius: 15px;">
+            </div>
+            <div style="flex: 0 0 50%; padding: 0 15px;">
+                <h1 id="detail-title" style="margin-bottom: 20px;"></h1>
+                <p id="detail-price" style="font-size: 24px; font-weight: bold; color: red; margin-bottom: 20px;"></p>
+                <p id="detail-desc" style="margin-bottom: 30px; color: #666;">
+                    Premium quality fabric, hand-picked for the LAVISH collection. 
+                    This iconic piece represents the pinnacle of timeless style.
+                    
+                </p>
+
+                <button id="add-to-cart-btn" class="button-animation">Add to Cart</button>
+                <button class="button-animation"><a href="products.html">Back to Products</button></a>
+                <button class="button-animation"><a href="checkout.html">Proceed to Checkout</button></a>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/cart.js"></script>
+    <script>
+        //small database for products
+        const products = {
+            "p1": { name: "Loubotin black shoes", price: 35.00, img: "assets/images/product_1.jpg" },
+            "p2": { name: "Ralph Lauren black Bear sweater", price: 25.99, img: "assets/images/product_2.jpg" },
+            "p3" : { name: "Ralph Lauren black jacket", price: 35.99, img: "assets/images/product_3.jpg" },
+            "p4" : { name: "Ralph Lauren black zipper", price: 30.99, img: "assets/images/product_4.jpg" },
+            "p5" : { name: "Ralph Lauren blue Bear sweater", price: 25.99, img: "assets/images/product_5.jpg" },
+            "p7" : { name: "Ralph Lauren green Bear sweater", price: 25.99, img: "assets/images/product_7.jpg" },
+            "p8" : { name: "Ralph Lauren navy america sweater", price: 25.00, img: "assets/images/product_8.jpg" },
+            "p10" : { name: "Ralph Lauren navy jacket", price: 30.99, img: "assets/images/product_10.jpg" },
+            "p11" : { name: "Ralph Lauren navy sweater", price: 25.00, img: "assets/images/product_11.jpg" },
+            "p12" : { name: "Ralph Lauren navy zipper", price: 28.00, img: "assets/images/product_12.jpg" },
+            "p13" : { name: "Ralph Lauren red Bear sweater", price: 25.00, img: "assets/images/product_13.jpg" },
+            "p14" : { name: "Ralph Lauren white america sweater", price: 25.99, img: "assets/images/product_14.jpg" },
+            "p16" : { name: "Ralph Lauren white Bear sweater", price: 25.00, img: "assets/images/product_16.jpg" },
+            "p18" : { name: "Ralph Lauren white jacket", price: 30.99, img: "assets/images/product_18.jpg" },
+            "p19" : { name: "Ralph Lauren black Bear sweater", price: 25.00, img: "assets/images/product_19.jpg" },
+            "p20" : { name: "Ralph Lauren white sweater", price: 25.99, img: "assets/images/product_20.jpg" },
+            "p21" : { name: "Ami Paris white sweater", price: 20.00, img: "assets/images/product_21.jpg" },
+
+        };
+
+        // Get the ID from the URL (product-details.html?id=p1)
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id');
+        const product = products[productId];
+
+        if (product) {
+            document.getElementById('detail-title').innerText = product.name;
+            document.getElementById('detail-price').innerText = product.price.toFixed(2) + " JOD";
+            document.getElementById('detail-image').src = product.img;
+            
+            document.getElementById('add-to-cart-btn').onclick = function() {
+                addToCart(product.price, product.name, product.img);
+            };
+        }
+    </script>
+    <div class="sponsors-section">
+            <h2 class="text-center mb-4">Our "Elite" Partners</h2>
+            <div class="sponsor-grid">
+                <div class="sponsor-card">
+                    <i class="fa-solid fa-horse"></i>
+                    <h3>Ralph's Lemon</h3>
+                    <p>Premium Citrus Apparel</p>
+                </div>
+                <div class="sponsor-card">
+                    <i class="fa-solid fa-crown"></i>
+                    <h3>King Loubotin</h3>
+                    <p>Red-Socked Footwear</p>
+                </div>
+                <div class="sponsor-card">
+                    <i class="fa-solid fa-heart"></i>
+                    <h3>Ami London</h3>
+                    <p>From the UK with Love</p>
+                </div>
+                <div class="sponsor-card">
+                    <i class="fa-solid fa-shirt"></i>
+                    <h3>LAVISH-ISH</h3>
+                    <p>Affordable Luxury-ish</p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
